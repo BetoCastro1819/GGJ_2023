@@ -3,10 +3,15 @@ extends KinematicBody2D
 const speed: float = MovementGlobals.PLAYER_SPEED
 const maxSpeed: float = MovementGlobals.MAX_SPEED
 const jump_power: float = MovementGlobals.JUMP_POWER
+const idle_frame: int = 2
 
+onready var animated_sprite = $AnimatedSprite
 var motion = Vector2()
 var is_alive = true
 var has_light_gem = false
+
+#func _init():
+#	animated_sprite.frame = idle_frame
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("respawn"):
@@ -15,15 +20,21 @@ func _physics_process(delta: float) -> void:
 	if !is_alive: return
 
 	motion.y += MovementGlobals.GRAVITY
-	
+
 	var friction = false
 	var direction: Vector2 = Vector2.ZERO
 	if Input.is_action_pressed("move_right"):
+		animated_sprite.play("walk")
+		animated_sprite.flip_h = false
 		motion.x = min(motion.x + speed, maxSpeed)
 	elif Input.is_action_pressed("move_left"):
+		animated_sprite.play("walk")
+		animated_sprite.flip_h = true
 		motion.x = max(motion.x - speed, -maxSpeed)
 	else:
 		friction = true
+		animated_sprite.frame = idle_frame
+		animated_sprite.stop()
 		
 	if is_on_floor():
 		if Input.is_action_just_pressed("jump"):
