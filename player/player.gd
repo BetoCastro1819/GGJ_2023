@@ -44,6 +44,7 @@ func _physics_process(delta: float) -> void:
 	if is_on_floor():
 		if Input.is_action_just_pressed("jump"):
 			motion.y = jump_power
+			$JumpSFX.play()
 		if friction == true:
 			motion.x = lerp(motion.x, 0, 0.5)
 	else:

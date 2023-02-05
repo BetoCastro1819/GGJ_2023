@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/props/Caja.png" type="Texture" id=1]
 [ext_resource path="res://box/box.gd" type="Script" id=2]
+[ext_resource path="res://musics/SFX/Personaje principal/SFX - GGJ Roots 2023_Drag.wav" type="AudioStream" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 30, 32 )
@@ -24,6 +25,9 @@ shape = SubResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PushDetector"]
 shape = SubResource( 2 )
+
+[node name="DragSFX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
 
 [connection signal="body_entered" from="PushDetector" to="." method="_on_PushDetector_body_entered"]
 [connection signal="body_exited" from="PushDetector" to="." method="_on_PushDetector_body_exited"]

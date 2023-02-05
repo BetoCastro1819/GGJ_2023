@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://player/player.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
@@ -11,6 +11,8 @@
 [ext_resource path="res://animations/player/walk/2.png" type="Texture" id=9]
 [ext_resource path="res://animations/player/walk/3.png" type="Texture" id=10]
 [ext_resource path="res://musics/SFX/Personaje principal/SFX - GGJ Roots 2023_Steps.wav" type="AudioStream" id=11]
+[ext_resource path="res://musics/SFX/Personaje principal/SFX - GGJ Roots 2023_Jump.wav" type="AudioStream" id=13]
+[ext_resource path="res://musics/SFX/Personaje principal/SFX - GGJ Roots 2023_Drag.wav" type="AudioStream" id=14]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 21, 31 )
@@ -38,8 +40,13 @@ shape = SubResource( 1 )
 scale = Vector2( 0.1, 0.1 )
 frames = SubResource( 2 )
 animation = "walk"
-frame = 5
 playing = true
+
+[node name="DragSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
+
+[node name="JumpSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
 
 [node name="WalkingSFX" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 11 )

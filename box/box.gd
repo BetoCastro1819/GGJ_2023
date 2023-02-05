@@ -24,6 +24,7 @@ func _physics_process(delta: float) -> void:
 	var is_grabbing: bool = false
 	if can_grab and Input.is_action_pressed("grab"):
 		is_grabbing = true
+		#$DragSFX.play()
 
 	if is_grabbing:
 		# print("player is grabbing box")
