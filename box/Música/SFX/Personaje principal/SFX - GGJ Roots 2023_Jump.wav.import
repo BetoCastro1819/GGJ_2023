@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SFX - GGJ Roots 2023_Jump.wav-b6ac33ed2aaa304c2fd46dc096e74832.sample"
+
+[deps]
+
+source_file="res://box/Música/SFX/Personaje principal/SFX - GGJ Roots 2023_Jump.wav"
+dest_files=[ "res://.import/SFX - GGJ Roots 2023_Jump.wav-b6ac33ed2aaa304c2fd46dc096e74832.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SFX - GGJ Roots 2023_Drag.wav-d82d044700c958440f494beadf95fbe3.sample"
+
+[deps]
+
+source_file="res://musics/SFX/Personaje principal/SFX - GGJ Roots 2023_Drag.wav"
+dest_files=[ "res://.import/SFX - GGJ Roots 2023_Drag.wav-d82d044700c958440f494beadf95fbe3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

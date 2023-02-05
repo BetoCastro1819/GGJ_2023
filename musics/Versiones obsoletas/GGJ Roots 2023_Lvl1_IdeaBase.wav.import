@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/GGJ Roots 2023_Lvl1_IdeaBase.wav-f048b84f693e5aab9b6d8705c24f27f4.sample"
+
+[deps]
+
+source_file="res://musics/Versiones obsoletas/GGJ Roots 2023_Lvl1_IdeaBase.wav"
+dest_files=[ "res://.import/GGJ Roots 2023_Lvl1_IdeaBase.wav-f048b84f693e5aab9b6d8705c24f27f4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SFX - GGJ Roots 2023_BoxCollide.wav-2a75873a935cc8236e11c79e52e3a908.sample"
+
+[deps]
+
+source_file="res://box/Música/SFX/SFX Generales/SFX - GGJ Roots 2023_BoxCollide.wav"
+dest_files=[ "res://.import/SFX - GGJ Roots 2023_BoxCollide.wav-2a75873a935cc8236e11c79e52e3a908.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

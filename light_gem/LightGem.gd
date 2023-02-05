@@ -16,4 +16,3 @@ func _on_Area2D_body_exited(body):
 	if body.is_in_group("player"):
 		can_pickup = false
 		print("moved away from gem")
-

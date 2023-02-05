@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/FRASE 1.wav-d87a552d0b566721dff6b1ab3f74747e.sample"
+
+[deps]
+
+source_file="res://box/Música/Versiones obsoletas/FRASE 1.wav"
+dest_files=[ "res://.import/FRASE 1.wav-d87a552d0b566721dff6b1ab3f74747e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
