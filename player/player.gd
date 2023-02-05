@@ -6,6 +6,7 @@ const jump_power: float = MovementGlobals.JUMP_POWER
 
 var motion = Vector2()
 var is_alive = true
+var has_light_gem = false
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("respawn"):
@@ -32,10 +33,7 @@ func _physics_process(delta: float) -> void:
 	else:
 		if friction == true:
 			motion.x = lerp(motion.x, 0, 0.5)
-			
-	if Input.is_action_pressed("grab"):
-		print("Grabbing")
-	
+		
 	motion = move_and_slide(motion, Vector2.UP)
 
 func on_killed() -> void:
@@ -44,3 +42,10 @@ func on_killed() -> void:
 
 func on_respawn() -> void:
 	is_alive = true
+	
+func pickup_light_gem() -> void:
+	print("picked up gem")
+	has_light_gem = true
+	
+func has_light_gem() -> bool:
+	return has_light_gem

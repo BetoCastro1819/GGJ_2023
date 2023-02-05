@@ -15,7 +15,6 @@ func _physics_process(delta: float) -> void:
 		if can_grab and Input.is_action_pressed("grab"):
 			motion = cached_player.motion
 			motion = move_and_slide(motion, Vector2.UP)
-			print(cached_player.motion.x)
 
 	if !is_on_floor():
 		motion.y += MovementGlobals.GRAVITY;
@@ -27,7 +26,7 @@ func _physics_process(delta: float) -> void:
 		is_grabbing = true
 
 	if is_grabbing:
-		print("player is grabbing box")
+		# print("player is grabbing box")
 		if Input.is_action_pressed("move_right"):
 			motion.x = min(motion.x + speed, maxSpeed)
 		elif Input.is_action_pressed("move_left"):
@@ -53,9 +52,9 @@ func _on_PushDetector_body_entered(body: Node) -> void:
 	if body.is_in_group("player"):
 		cached_player = body
 		can_grab = true
-		print("player can grab box")
+		# print("player can grab box")
 
 func _on_PushDetector_body_exited(body: Node) -> void:
 	if body.is_in_group("player"):
 		can_grab = false
-		print("player cannot grab box")
+		# print("player cannot grab box")
