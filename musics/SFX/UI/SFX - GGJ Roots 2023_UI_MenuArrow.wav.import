@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SFX - GGJ Roots 2023_UI_MenuArrow.wav-44350b4a8956ad7fe811a287943eff2e.sample"
+
+[deps]
+
+source_file="res://musics/SFX/UI/SFX - GGJ Roots 2023_UI_MenuArrow.wav"
+dest_files=[ "res://.import/SFX - GGJ Roots 2023_UI_MenuArrow.wav-44350b4a8956ad7fe811a287943eff2e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
